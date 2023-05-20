@@ -1,0 +1,57 @@
+<!-- <?php
+$conn= mysqli_connect("localhost", "root", "root", "contactus");
+
+if (isset($_POST['submit'])) {
+	if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['desc'])){
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$desc = $_POST['desc'];
+
+		$query = "INSERT INTO `connect` (`name`, `email`, `phone`, `message`, `date`) VALUES ('$name', '$email', '$phone', '$desc', CURRENT_TIMESTAMP())";
+		$run = mysqli_query($conn, $query);
+		if ($run) {
+			echo "successfull";
+		}else{
+			echo "not submitted";
+		}
+	}
+	else{
+		echo "all field required";
+	}
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Class Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Bootstrap/css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+            <input type="text" name="name" id="name" class="contact-form-text" placeholder="Your name"
+                autocomplete="off" />
+            <input type="email" name="email" id="email" class="contact-form-text" placeholder="Your email"
+                autocomplete="off" />
+            <input type="text" name="phone" id="phone" class="contact-form-text" placeholder="Your phone"
+                autocomplete="off" />
+            <textarea name="desc" id="desc" class="contact-form-text" placeholder="Your message"></textarea>
+            <input type="submit" name="submit" class="contact-form-btn" value="Send" />
+        </form>
+    </div>
+
+    <!--Bootsrap/js-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
