@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply-box{
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: white;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 12px;
+}
+
+.small-title{
+    font-size: 20px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+input, textarea, select{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input, textarea, select:focus{
+    outline-color: #F9594A;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+button{
+    width: 120px;
+    padding: 13px;
+    color: #F9594A;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #F9594A;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    width: 120px;
+    padding: 13px;
+    color: White;
+    font-weight: 600;
+    background: #F9594A;
+    border: 2px solid #F9594A;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.textarea-control{
+    grid-column: 1 / span 2;
+}
+.textarea-control textarea{
+    margin-top: 3px;
+    width: 100%;
+}

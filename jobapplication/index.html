@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet" />
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="apply-box">
+            <h1>
+                Job Application
+                <span class="small-title">(WEB)</span>
+            </h1>
+            <form action="">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first_name">First Name: </label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Your First Name: " required />
+                    </div>
+                    <div class="form-control">
+                        <label for="last_name">Last Name: </label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Your Last Name: " required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Your Email: " required />
+                    </div>
+                    <div class="form-control">
+                        <label for="job-role">Job Role: </label>
+                        <select id="job-role">
+                            <option value="">Select Your Job Role</option>
+                            <option value="front-end">Front End Dev</option>
+                            <option value="back-end">Back End Dev</option>
+                            <option value="full-stack">Full Stack Dev</option>
+                            <option value="uiux">UI/UX Designer</option>
+                            <option value="gd">Graphic Designer</option>
+                        </select>
+                    </div>
+                    <div class="textarea-control">
+                        <label for="address">Address: </label>
+                        <textarea id="address" name="address" rows="5" cols="50" >Enter Your Address: </textarea>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">City: </label>
+                        <input type="text" name="city" id="city" placeholder="Your City: " required />
+                    </div>
+                    <div class="form-control">
+                        <label for="pincode">Pincode: </label>
+                        <input type="number" name="pincode" id="pincode" placeholder="Your Pincode: " required />
+                    </div>
+                    <div class="form-control">
+                        <label for="date">Date: </label>
+                        <input type="date" name="date" id="date" value="2022-09-18" placeholder="dd/mm/yy" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="cv">Upload Your CV: </label>
+                        <input type="file" id="cv" required />
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
